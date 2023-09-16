@@ -1,4 +1,4 @@
-var map=L.map('map').setView([9.84981,-83.92608],19);
+var map=L.map('map').setView([9.84938, -83.92634],19);
 
 var polygonGroup = L.layerGroup().addTo(map);
 
