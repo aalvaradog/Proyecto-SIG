@@ -116,7 +116,7 @@ var datosParques={
 
 
     // Iterar a través de las características (polígonos) en la variable geojsonData
-geojsonData.features.forEach(function(feature) {
+/*geojsonData.features.forEach(function(feature) {
     // Crear una capa de polígono para cada característica
     var polygon = L.geoJSON(feature);
 
@@ -126,7 +126,7 @@ geojsonData.features.forEach(function(feature) {
 
     // Agregar la capa de polígono al grupo de capas
     polygon.addTo(polygonGroup);
-});
+});*/
 
 /*datosParques.features.forEach(function(feature) {
     // Crear una capa de polígono para cada característica
@@ -145,9 +145,9 @@ var overlays = {
     "Polígonos": polygonGroup
 };
 
-L.control.layers(null, overlays).addTo(map);
-L.geoJSON(datosParques).addTo(map);
-L.geoJSON(datosPuntos).addTo(map);
+//L.control.layers(null, overlays).addTo(map);
+//L.geoJSON(datosParques).addTo(map);
+//L.geoJSON(datosPuntos).addTo(map);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
